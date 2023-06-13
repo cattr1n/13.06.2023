@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAF1F8"
+    tools:context=".MainActivity">
+
+   <com.cattr1ne.myapplication23.PaintingView
+    android:id="@+id/painting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabPalette"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#33C0DA"
+            app:fabCustomSize="70dp"
+            app:maxImageSize="50dp"
+            android:clickable="true"
+            android:tintMode="add"
+            app:tint="@null"
+            app:srcCompat="@drawable/palette" />
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabEraser"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#33C0DA"
+            app:backgroundTint="#33C0DA"
+            app:fabCustomSize="70dp"
+            app:maxImageSize="50dp"
+            android:clickable="true"
+            android:tintMode="add"
+            app:tint="@null"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/eraser" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabChackmark"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#33C0DA"
+            app:backgroundTint="#33C0DA"
+            app:fabCustomSize="70dp"
+            app:maxImageSize="50dp"
+            android:clickable="true"
+            android:tintMode="add"
+            app:tint="@null"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/chackmark" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
